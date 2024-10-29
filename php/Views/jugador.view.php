@@ -13,12 +13,12 @@
         
         <label for="color">Color favorito:</label><br>
         <select id="color" name="color" required>
-            <option value="rojo">Rojo</option>
-            <option value="azul">Azul</option>
-            <option value="verde">Verde</option>
-            <option value="amarillo">Amarillo</option>
-            <option value="negro">Negro</option>
-            <option value="blanco">Blanco</option>
+            <option value="red">Rojo</option>
+            <option value="blue">Azul</option>
+            <option value="green">Verde</option>
+            <option value="yellow">Amarillo</option>
+            <option value="black">Negro</option>
+            <option value="white">Blanco</option>
         </select><br><br>
         
         <input type="submit" value="Enviar">

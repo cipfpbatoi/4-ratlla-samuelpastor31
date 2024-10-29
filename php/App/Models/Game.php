@@ -25,7 +25,9 @@ class Game
     {
         $this->board = new Board();
         $this->winner = null;
-        $this->nextPlayer = random_int(1, 2);  // Jugador aleatorio inicia tras reiniciar
+        $this->nextPlayer = random_int(1, 2); 
+        $this->save();
+         // Jugador aleatorio inicia tras reiniciar
     }
 
     public function play(int $columna): void
@@ -52,6 +54,7 @@ class Game
         if ($this->players[$this->nextPlayer]->getIsAutomatic() && !$this->winner) {
             $this->playAutomatic();
         }
+        $this->save();
     }
 
 
